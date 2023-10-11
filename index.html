@@ -8,7 +8,27 @@
     <table cellspacing="20">
       <tr>
         <td><img src="images/sholeh1.png" alt="Foto Profil" width="200" height="200"></td>
-        <td><h1>Sholeh Adianto</h1>
+        <style>
+          #text-container {
+              font-size: 50px;
+          }
+      </style>
+        </style>
+        <td><div id="text-container">
+                        Sholeh Adianto
+                    </div>
+                    <script>
+                        const textContainer = 
+                              document.getElementById("text-container");
+                        
+                        let hue = 0;
+                  
+                        setInterval(() => {
+                            hue = (hue + 1) % 360;
+                            const color = `hsl(${hue}, 100%, 50%)`;
+                            textContainer.style.color = color;
+                        }, 50);
+                  </script>
         <p><em>Mahasiswa</em><strong>
           <a href="https://unucirebon.ac.id" target="_blank">Universitas Nahdlatul Ulama Cirebon</a>
           </strong></p>
@@ -16,17 +36,44 @@
         <p><em>Program Studi Teknik Informatika</em></p></td>
       </tr>
     </table>
-    <hr>
-    <h3>Pengalaman Kerja</h3>
+    <hr />
+    <h3>Biodata</h3>
     <table>
       <tr>
-        <td>2019</td>
-        <td>Magang Toko Geotama Komputer</td>
+        <td>Nama Lengkap          :</td>
+        <td>Sholeh Adianto</td>
+      </tr>
+      <tr>
+        <td>Tempat, Tanggal Lahir :</td>
+        <td>Cirebon, 12 Juni 2001</td>
+      </tr>
+      <tr>
+        <td>Alamat                :</td>
+        <td>Desa Kedungjaya RT.02 RW.05 Blok Siledu Kec.Kedawung Kab.Cirebon</td>
+      </tr>
+      <tr>
+        <td>Email                  :</td>
+        <td>adiantosholeh13@gmail.com</td>
       </tr>
     </table>
-    <hr>
+    <hr />
+    <h3>Pendidikan</h3>
+    <table cellspacing="10">
+      <tr>
+        <td>2008 - 2014</td>
+        <td>SDN 2 Kedungjaya</td>
+      </tr>
+      <tr>
+        <td>2014 - 2017</td>
+        <td>MTsN 4 Cirebon</td>
+      </tr>
+      <tr>
+        <td>2017 - 2020</td>
+        <td>SMK Islamic Centre</td>
+      </tr>
+    </table>
     <h3>Keahlian</h3>
-    <table cellspacing="20">
+    <table cellspacing="10">
       <tr>
         <td>Web Development</td>
         <td>⭐⭐</td>
